@@ -10,7 +10,8 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>t", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeFindFileToggle<cr>", opts)
 
 -- Modes
 --   normal_mode = "n",

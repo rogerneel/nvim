@@ -45,6 +45,9 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+  use({ "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" })
+	use({ "kyazdani42/nvim-tree.lua", commit = "bdb6d4a25410da35bbf7ce0dbdaa8d60432bc243" })
+
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
   use "ellisonleao/gruvbox.nvim"
@@ -65,6 +68,11 @@ return packer.startup(function(use)
   -- LSP 
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+  -- Treesitter
+	use({
+		"nvim-treesitter/nvim-treesitter"
+	})
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
