@@ -10,8 +10,12 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Leader: trees
 keymap("n", "<leader>t", ":Lex 30<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeFindFileToggle<cr>", opts)
+-- Leader: telescope
+keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>g", ":Telescope live_grep<cr>", opts)
 
 -- Modes
 --   normal_mode = "n",

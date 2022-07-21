@@ -48,6 +48,13 @@ tsserver        -- for JS and TS projects
 
 Restart nvim and you should see the LSP engine running / autocompleting.
 
+### Telescope
+For full Telescope plugin capabilities, also need to install `ripgrep` and `fd`
+
+`brew install ripgrep`
+`brew install fd`
+
+Within NeoVim, run `:checkhealth telescope` to make sure everything is in place.
 
 ## Acknowledgements
 

@@ -71,9 +71,10 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
   -- Treesitter
-	use({
-		"nvim-treesitter/nvim-treesitter"
-	})
+	use "nvim-treesitter/nvim-treesitter"	
+
+  -- Telescope
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
