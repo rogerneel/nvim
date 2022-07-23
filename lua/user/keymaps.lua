@@ -16,6 +16,7 @@ keymap("n", "<leader>e", ":NvimTreeFindFileToggle<cr>", opts)
 -- Leader: telescope
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", ":Telescope live_grep<cr>", opts)
+keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
 
 -- Modes
 --   normal_mode = "n",
