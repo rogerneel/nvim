@@ -10,19 +10,31 @@ Install nvim with brew on MacOS or otherwise.
 
 `brew install nvim`
 
+You're also going to need a nerd-font to support extended characters:
+`brew tap homebrew/cask-fonts`
+`brew install --cask font-hack-nerd-font`
+
+Ensure `Hack Nerd Font Mono` is used in your terminal of choice. 
+(e.g. iTerm2: Preferences->Profiles->Text->Font)
+
 ### Clone Repo
 Git clone this repo into `~/.config` and make sure the directory name is `nvim` within that dir.
 
 ### Plugins
-Install all plugins by:
+The first time you run `nvim`, you will see all the plugins install and an unreadable purple dialog box fire.
+
+Once it's complete, press `q` and then exit nvim with a `:q`. Restart nvim.
+
+Once you restart `nvim` in any file, you should see a fully themed editor.
+
+For future editing and installing plugins:
 ```bash
   cd ~/.config/nvim/lua/user/
   nvim plugins.lua
-  :w (fake save plugins.lua within nvim)
+  (optionally add more plugins)
+  :w (save plugins.lua within nvim)
 ```
 the plugins will auto-install upon file save, then `:q` in `nvim`.
-
-Once you restart `nvim` in any file, you should see a fully themed editor.
 
 ### LSP
 Open any file in `nvim` and run `:LspInstallInfo`
